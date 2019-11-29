@@ -1,4 +1,6 @@
 @import "~normalize.css";
+@import "~animate.css";
+@import "main.css";
 
 * {
   margin: 0;
@@ -25,7 +27,6 @@
 }
 
 .menu__item {
-  /*width: 50%;*/
   width: 48%;
 }
 
@@ -63,6 +64,10 @@
   text-decoration: none;
   text-transform: capitalize;
   color: #ffffff;
+}
+
+.navigation__link:hover {
+  color: #008ed6;
 }
 
 
@@ -104,6 +109,11 @@
   cursor: pointer;
 }
 
+.header-content__button:hover {
+  background: #008ed6;
+  border: solid 1px #008ed6;
+}
+
 
 .intro__figure {
   display: flex;
@@ -118,10 +128,10 @@
 .text_blue {
   color: #008ed6;
 }
-.button_blue {
+/*.button_blue {
   background: #008ed6;
   border: solid 1px #008ed6;
-}
+}*/
 
 
 @media (max-width: 1100px) {
@@ -196,10 +206,36 @@
   }
 }
 
+/*.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #999999;
+}*/
+.burger {
+  display: none;
+  color: #999999;
+  cursor: pointer;
+}
+
 @media (max-width: 450px) {
   .header {
     padding: 0 20px;
   }
+
+  /**/
+  .navigation__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navigation__item {
+    width: 30%;
+    text-align: center;
+  }
+  .navigation__link {
+    margin: 0 5px;
+  }
+  /**/
   
   .intro__figure > img {
     width: 100px;

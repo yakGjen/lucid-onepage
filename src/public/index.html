@@ -5,6 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
   </head>
   <body>
     <div class="container">
@@ -20,6 +27,10 @@
             </div>
           </div>
           <nav class="navigation menu__item">
+            <!--<div class="burger">
+              <i class="fas fa-bars burger__item"></i>
+            </div>-->
+            <!--<i class="fas fa-bars burger"></i>-->
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a href="#" class="navigation__link">
@@ -66,7 +77,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eveniet placeat suscipit. Cupiditate enim ex ipsa odio placeat praesentium quibusdam rerum unde? Consequuntur eos laborum nesciunt nobis nostrum, optio sed.
             </p>
             <div>
-              <button class="header-content__button button_blue">download now</button>
+              <button class="header-content__button">download now</button>
               <button class="header-content__button">view features</button>
             </div>
           </div>
@@ -75,8 +86,340 @@
           </figure>
         </section>
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <main class="main">
+        <section class="features">
+          <p class="features__item features__up-header text_blue">
+            product owerview
+          </p>
+          <h2 class="features__item">
+            List of amazing features
+          </h2>
+          <div class="features__item features-lines">
+            <span class="features-lines__item"></span>
+            <span class="features-lines__item"></span>
+          </div>
+          <div class="features__item features-wrap">
+            <article class="feature">
+              <div class="feature__img-border">
+                <i class="fas fa-desktop feature__img text_blue"></i>
+              </div>
+              <h3 class="feature__header">
+                Responsive
+              </h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature__img-border">
+                <i class="fas fa-cog feature__img text_blue"></i>
+              </div>
+              <h3 class="feature__header">
+                Customizable
+              </h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature__img-border">
+                <i class="far fa-thumbs-up feature__img text_blue"></i>
+              </div>
+              <h3 class="feature__header">
+                Lovely Design
+              </h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature__img-border">
+                <i class="fas fa-mobile-alt feature__img text_blue"></i>
+              </div>
+              <h3 class="feature__header">
+                Mobile Friendly
+              </h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="about-long">
+          <figure class="about-long__figure">
+            <img src="./assets/phones.png" alt="phones" class="about-long__img">
+          </figure>
+          <section class="about-content about-long__content">
+            <p class="about-content__item about-content__up-header text_blue">
+              dip into the details
+            </p>
+            <h2 class="about-content__item about-content__header">
+              Beautiful on every device
+            </h2>
+            <div class="about-lines about-content__item">
+              <span class="about-lines__line"></span>
+              <span class="about-lines__line"></span>
+            </div>
+            <p class="about-content__item about-content__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolores est inventore officia quas quibusdam repudiandae! Accusantium architecto beatae, cupiditate delectus eaque facilis magni nisi, provident repellat vel vero!
+            </p>
+            <div class="about-examp about-content__item">
+              <p class="about-examp__item">
+                <i class="fas fa-trophy"></i>
+                Awesome design
+              </p>
+              <p class="about-examp__item">
+                <i class="fas fa-mouse-pointer"></i>
+                Fully responsive
+              </p>
+              <p class="about-examp__item">
+                <i class="fas fa-bolt"></i>
+                Retina ready
+              </p>
+              <p class="about-examp__item">
+                <i class="fas fa-tachometer-alt"></i>
+                Tons of features and easy to use
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section class="about-short">
+          <section class="about-content about-short__content">
+            <p class="about-content__item about-content__up-header text_blue">
+              dip into the details
+            </p>
+            <h2 class="about-content__item about-content__header">
+              Super easy to customize
+            </h2>
+            <div class="about-lines about-content__item">
+              <span class="about-lines__line"></span>
+              <span class="about-lines__line"></span>
+            </div>
+            <p class="about-content__item about-content__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolores est inventore officia quas quibusdam repudiandae! Accusantium architecto beatae, cupiditate delectus eaque facilis magni nisi, provident repellat vel vero!
+            </p>
+          </section>
+          <figure class="about-short__figure">
+            <img src="./assets/about-short-phone.png" alt="phones" class="about-long__img">
+          </figure>
+        </section>
+
+        <section class="testimonials">
+          <p class="testimonials__up-header testimonials__item text_blue">
+            quality has its price
+          </p>
+          <h2 class="testimonials__header testimonials__item">
+            Pricings & Plans
+          </h2>
+          <div class="testimonials-lines testimonials__item">
+            <span class="testimonials-lines__line"></span>
+            <span class="testimonials-lines__line"></span>
+          </div>
+          <div class="quotes">
+            <article class="quote">
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque fuga nihil? Asperiores enim, est exercitationem, explicabo fugiat id iure laudantium minima natus nostrum obcaecati odio sequi tenetur! Fuga, quaerat."
+              </p>
+              <div class="quote-card">
+                <img
+                  src="./assets/testimonials-seo.png"
+                  alt="seo"
+                  class="quote-card__item quote__img"
+                >
+                <div class="quote-card__item quote__descr">
+                  <h4>
+                    John Doe
+                  </h4>
+                  <p class="quote-card__position">
+                    CEO, THE RIVERS COMPANY
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="quote">
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque fuga nihil? Asperiores enim, est exercitationem, explicabo fugiat id iure laudantium minima natus nostrum obcaecati odio sequi tenetur! Fuga, quaerat."
+              </p>
+              <div class="quote-card">
+                <img
+                  src="./assets/testimonials-designer.png"
+                  alt="designer"
+                  class="quote-card__item quote__img"
+                >
+                <div class="quote-card__item quote__descr">
+                  <h4>
+                    John Doe
+                  </h4>
+                  <p class="quote-card__position">
+                    Designer, SMTH COMPANY
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="catcher">
+          <h2 class="catcher__header">
+            Like what you see? Get this great theme now!
+          </h2>
+          <div class="catcher__buttons">
+            <button class="catcher__button">view features</button>
+            <button class="catcher__button button_blue">download now</button>
+          </div>
+        </section>
+        
+        <section class="pricings">
+          <p class="pricings__up-header pricings__item text_blue">
+            quality has its price
+          </p>
+          <h2 class="pricings__header pricings__item">
+            Pricings & Plans
+          </h2>
+          <div class="pricings__lines pricings__item">
+            <span class="pricings__line"></span>
+            <span class="pricings__line"></span>
+          </div>
+          <div class="pricings__cards pricings__item">
+            <article class="pricings__card card">
+              <h3 class="card__header">
+                Free
+              </h3>
+              <div class="card__price">
+                <p class="card__currency">
+                  <span>$</span>0
+                </p>
+                <p class="card__period">
+                  /per month
+                </p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci dignissimos doloremque doloribus est facilis fuga laborum laudantium molestiae numquam odio porro quasi recusandae repellendus, sapiente vitae voluptates! Quos.
+              </p>
+              <button class="card__button">order now</button>
+            </article>
+            <article class="pricings__card card">
+              <h3 class="card__header">
+                Personal
+              </h3>
+              <div class="card__price">
+                <p class="card__currency">
+                  <span>$</span>25
+                </p>
+                <p class="card__period">
+                  /per month
+                </p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci dignissimos doloremque doloribus est facilis fuga laborum laudantium molestiae numquam odio porro quasi recusandae repellendus, sapiente vitae voluptates! Quos.
+              </p>
+              <button class="card__button">order now</button>
+            </article>
+            <article class="pricings__card card">
+              <h3 class="card__header">
+                Business
+              </h3>
+              <div class="card__price">
+                <p class="card__currency">
+                  <span>$</span>50
+                </p>
+                <p class="card__period">
+                  /per month
+                </p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci dignissimos doloremque doloribus est facilis fuga laborum laudantium molestiae numquam odio porro quasi recusandae repellendus, sapiente vitae voluptates! Quos.
+              </p>
+              <button class="card__button">order now</button>
+            </article>
+            <article class="pricings__card card">
+              <h3 class="card__header">
+                Ultimate
+              </h3>
+              <div class="card__price">
+                <p class="card__currency">
+                  <span>$</span>99
+                </p>
+                <p class="card__period">
+                  /per month
+                </p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci dignissimos doloremque doloribus est facilis fuga laborum laudantium molestiae numquam odio porro quasi recusandae repellendus, sapiente vitae voluptates! Quos.
+              </p>
+              <button class="card__button">order now</button>
+            </article>
+          </div>
+        </section>
+        
+        <section class="contacts">
+          <p class="contacts__item contacts__up-header text_blue">stay in touch</p>
+          <h2 class="contacts__item contacts__header">
+            Contacts Us
+          </h2>
+          <div class="contacts__item contacts__lines">
+            <span class="contacts__line"></span>
+            <span class="contacts__line"></span>
+          </div>
+          <div class="contact-cards contacts__item">
+            <article class="contact-card">
+              <h3>
+                <i class="fas fa-phone contact-card__img"></i>
+              </h3>
+              <p class="contact-card__text">Phone: 000-00-00</p>
+              <p class="contact-card__text">Fax: 000-00-00</p>
+            </article>
+            <article class="contact-card">
+              <h3>
+                <i class="fas fa-location-arrow contact-card__img"></i>
+              </h3>
+              <p class="contact-card__text">Street: Smth, 1</p>
+              <p class="contact-card__text">City: Smth</p>
+            </article>
+            <article class="contact-card">
+              <h3>
+                <i class="fas fa-envelope-open-text contact-card__img"></i>
+              </h3>
+              <p class="contact-card__text">support@test.com</p>
+            </article>
+          </div>
+          <form class="form contacts__item">
+            <div class="form__col">
+              <input type="text" placeholder="Name" class="form__item">
+              <input type="email" placeholder="Email" class="form__item">
+              <input type="email" placeholder="Subject" class="form__item">
+            </div>
+            <div class="form__col">
+              <textarea cols="30" rows="10" placeholder="Message" class="form__item"></textarea>
+            </div>
+            <div class="form__col-butt">
+              <button class="form__button button_blue">Send message</button>
+            </div>
+          </form>
+        </section>
+        
+        <section class="map">
+          <div id="mapid"></div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="socials">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <p>
+          Copyright &copy; 2014 Lucid Onepage Theme
+        </p>
+      </footer>
     </div>
   </body>
 </html>
