@@ -1,12 +1,14 @@
+import ScrollMenu from './scroll-menu';
 import Map from './map';
 import Animations from './animations';
+
+new ScrollMenu();
 
 const map = new Map();
 map.init();
 
 const animations = new Animations();
 animations.init();
-
 
 
 const pricingsCards = document.querySelector('.pricings__cards');
